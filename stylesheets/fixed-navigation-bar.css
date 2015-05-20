@@ -14,7 +14,7 @@
   line-height: 50px;
 }
 .menu {
-  width: 90%;
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -52,12 +52,6 @@ a.sitename, a:visited.sitename {
   background-repeat: no-repeat;
   background-position: center left;
   color: #dde1e2;
-}
-.show {
-  background-image: url(assets/down-arrow-icon.png);
-}
-.hide {
-  background-image: url(assets/up-arrow-icon.png);
 }
 
 @media only screen and (max-width: 960px) {

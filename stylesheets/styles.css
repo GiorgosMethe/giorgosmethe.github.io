@@ -188,10 +188,18 @@ footer {
   bottom:50px;
 }
 
-@media (max-height: 900px){    
+#container{
+    width: 270px;
+}
+
+@media (max-height: 900px) and (min-width: 960px){    
   footer{
     position:fixed;
-    top:800px;
+    top:650px;
+  }
+
+  #container{
+    width: 150px;
   }
 }
 
