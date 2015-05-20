@@ -8,13 +8,6 @@
   height: 50px;
   background-color: #00a087;
 }
-
-/* The element at the top of the page right after the fixed navigation bar
-   MUST have sufficient top margin or else it will be covered by the bar */
-.content {
-  margin-top: 20px;
-}
-
 /* Example responsive navigation menu  */
 .fixed-nav-bar li, .fixed-nav-bar a { 
   height: 50px;
@@ -38,7 +31,7 @@
   display: inline-block;
   margin-right: 15px;
   margin-left: 15px;
-  font-size:18pt;
+  font-size:15pt;
 }
 a.sitename, a:visited.sitename {
   color: #e0e0e0;
@@ -67,7 +60,7 @@ a.sitename, a:visited.sitename {
   background-image: url(assets/up-arrow-icon.png);
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
   .menu {
     position: relative;
     width: 100%;
