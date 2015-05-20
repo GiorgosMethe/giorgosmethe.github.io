@@ -33,7 +33,7 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-  color:#494949;
+  color:#9999;
 }
 
 a {
@@ -181,10 +181,18 @@ hr {
 }
 
 footer {
+  font-size:13px;
   width:270px;
   float:left;
   position:fixed;
   bottom:50px;
+}
+
+@media (max-height: 900px){    
+  footer{
+    position:fixed;
+    top:800px;
+  }
 }
 
 @media print, screen and (max-width: 960px) {
