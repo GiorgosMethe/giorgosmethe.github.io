@@ -9,6 +9,9 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="stylesheet" href="stylesheets/fixed-navigation-bar.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+        <script src="javascripts/jquery-1.8.3.min.js"></script>
+        <script src="javascripts/animatescroll.js"></script>
     </head>
     <body>
         <nav class="fixed-nav-bar">
@@ -18,11 +21,11 @@
                 <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
                 <ul class="menu-items">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#Curicullum">Curriculum Vitae</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#links">Links</a></li>
-                    <li><a href="#personal">Personal</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#Curicullum" onclick="$('#section-1').animatescroll({scrollspeed:3000,padding:70});">Curriculum Vitae</a></li>
+                    <li><a href="#publications " onclick="$('#section-2').animatescroll({scrollspeed:3000,padding:70});">Publications</a></li>
+                    <li><a href="#links" onclick="$('#section-3').animatescroll({scrollspeed:3000,padding:70});">Links</a></li>
+                    <li><a href="#personal" onclick="$('#section-4').animatescroll({scrollspeed:3000,padding:70});">Personal</a></li>
+                    <li><a href="#contact" onclick="$('#section-5').animatescroll({scrollspeed:3000,padding:70});">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -58,6 +61,9 @@
                 <p>I firmly believe that artificial intelligence can slowly, take over all simple tasks humans are forced to deal with on daily basis. Artificial intelligence as a field of study can help humanity move forward faster, if used appropriately. I currently conduct research on how artificial intelligence can benefit future electricity networks and markets. Slowly smart homes will become reality, renewable power generation will overtake traditional ways of power production in quantity. Flexibility and demand-response methods will be used and they have to be used intelligently. My research focuses on multi-agent systems, game theory and learning.</p>
 
 
+                <div id="section-1">
+
+
                 <h2><a id="Curicullum" class="anchor" href="#curicullum" aria-hidden="true"></a>Curriculum Vitae</a></h2>
 
                 <p>Georgios Methenitis was born in Athens, in October 1988. He is originally from Evia, a beautiful island in the middle part of Greece.</p>
@@ -66,7 +72,6 @@
 
                 <p>He received his Masters of Science degree after completing a two-years master studies at University of Amsterdam in the subject of artificial Intelligence in December 2014. During his master studies he worked as a teaching assistant at University of Amsterdam, and as an intern at VicarVision, a computer vision company located in Amsterdam. He was also a member of Dutch Nao Team of University of Amsterdam, participating in two major RoboCup competitions.</p>
 
-                
                 
                 <p><img src="images/small-robocup.jpg" >Third place in the Iran Open 2013</p>
                 <hr>
@@ -79,8 +84,13 @@
                 <p>You can download my CV from here:</p>
                 <a href="files/Georgios_Methenitis_CV.pdf">
                 <img src="images/pdf.png", style="height:40px"/>
-                
 
+
+
+                <div>                
+
+
+                <div id="section-2">
 
                 <h2><a id="publications" class="anchor" href="#publications" aria-hidden="true"></span></a>Publications</h2>
 
@@ -103,12 +113,17 @@
                 <hr>
                 <p><a href="http://dare.uva.nl/document/2/127355">De Kok, Patrick, Nicolo Girardi, Amogh Gudi, Chiel Kooijman, Georgios Methenitis, Sebastien Negrijn, Nikolaas Steenbergen et al. "Team description for RoboCup 2013 in Eindhoven, the Netherlands." Dutch Nao Team, Universiteit van Amsterdam & TU Delft (2013).</a></p>
 
+                </div>
 
-
+                <div id="section-3">
+                
                 <h2><a id="links" class="anchor" href="#links" aria-hidden="true"></span></a>Links</h2>
                 <p><a href="http://www.esa.int/gsp/ACT/ai/projects/soft_robots.html">http://www.esa.int/gsp/ACT/ai/projects/soft_robots.html</a></p>
 
+                </div>
+                
 
+                <div id="section-4">
 
                 <h2><a id="personal" class="anchor" href="#personal" aria-hidden="true"></span></a>Personal</h2>
                 <p>I love travelling and taking pictures of nice sceneries not only in the places I am visiting, but also in my everyday life.</p>
@@ -147,12 +162,21 @@
                 <p><a href="images/monaco.jpg"><img src="images/download.svg", style="height:30px"></a></p>
                 <hr>
 
+                </div>
+
+
+                <div id="section-5">
+
                 <h2><a id="contact" class="anchor" href="#contact" aria-hidden="true"></span></a>Contact</h2>
                 <p>Email: georgios [dot] methenitis [at] cwi [dot] nl</p>
                 <p>Address: Science Park 123, 1098 XG Amsterdam, The Netherlands</p>
                 <p>Room: M392</p>
                 <p>Telephone: +31(0)20 592 4198</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.769704914283!2d4.952365999999989!3d52.35646200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60943849abc4f%3A0x7c49bc3f6dd03051!2sCentrum+Wiskunde+%26+Informatica!5e0!3m2!1sen!2snl!4v1431966168630" width="100%" height="350px" frameborder="0" style="border:0"></iframe>
+
+                </div>
+
+
             </section>
             <footer>
                 <p>&copy; Georgios Methenitis, 2015</p>
