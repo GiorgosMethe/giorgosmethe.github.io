@@ -51,51 +51,16 @@
             background: url(../img/browser-icons.png);
         }
         </style>
-        <script type="text/javascript" src="javascripts/jssor.slider.mini.js"></script>
-        <script>
-            //Reference http://www.jssor.com/development/slider-with-caption-jquery.html
-            //Reference http://www.jssor.com/development/reference-ui-definition.html#captiondefinition
-            //Reference http://www.jssor.com/development/tool-caption-transition-viewer.html
-
-            jQuery(document).ready(function ($) {
-                var _CaptionTransitions = [];
-                _CaptionTransitions["L"] = { $Duration: 800, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
-                _CaptionTransitions["R"] = { $Duration: 800, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
-                _CaptionTransitions["T"] = { $Duration: 800, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
-                _CaptionTransitions["B"] = { $Duration: 800, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
-                _CaptionTransitions["TL"] = { $Duration: 800, x: 0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
-                _CaptionTransitions["TR"] = { $Duration: 800, x: -0.6, y: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
-                _CaptionTransitions["BL"] = { $Duration: 800, x: 0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
-                _CaptionTransitions["BR"] = { $Duration: 800, x: -0.6, y: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine, $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
-
-                _CaptionTransitions["WAVE|L"] = { $Duration: 1500, x: 0.6, y: 0.3, $Easing: { $Left: $JssorEasing$.$EaseLinear, $Top: $JssorEasing$.$EaseInWave }, $Opacity: 2, $Round: { $Top: 2.5} };
-                _CaptionTransitions["MCLIP|B"] = { $Duration: 600, $Clip: 8, $Move: true, $Easing: $JssorEasing$.$EaseOutExpo };
-
-                var options = {
-                    $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-                    $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-                    $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
-                        $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
-                        $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
-                        $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
-                        $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
-                    }
-                };
-
-                var jssor_slider1 = new $JssorSlider$("slider1_container", options);
-            });
-        </script>
         <nav class="fixed-nav-bar">
             <div id="menu" class="menu">
                 <a class="sitename">Georgios Methenitis</a>
                 <!-- Example responsive navigation menu  -->
                 <a class="show" href="#menu">Menu</a><a class="hide" href="#hidemenu">Menu</a>
                 <ul class="menu-items">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#welcome" onclick="$('#section-0').animatescroll({padding:70});">Home</a></li>
                     <li><a href="#Curicullum" onclick="$('#section-1').animatescroll({padding:70});">Curriculum Vitae</a></li>
                     <li><a href="#publications " onclick="$('#section-2').animatescroll({padding:70});">Publications</a></li>
                     <li><a href="#links" onclick="$('#section-3').animatescroll({padding:70});">Links</a></li>
-                    <li><a href="#personal" onclick="$('#section-4').animatescroll({padding:70});">Personal</a></li>
                     <li><a href="#contact" onclick="$('#section-5').animatescroll({padding:70});">Contact</a></li>
                 </ul>
             </div>
@@ -133,27 +98,26 @@
             <section>
 
 
+                <div id="section-0">
 
-
-                <h2><a id="welcome" class="anchor" href="#welcome" aria-hidden="true"></a>Welcome to my personal webpage</h2>
-                <p>I firmly believe that artificial intelligence can slowly, take over all simple tasks humans are forced to deal with on daily basis. Artificial intelligence as a field of study can help humanity move forward faster, if used appropriately. I currently conduct research on how artificial intelligence can benefit future electricity networks and markets. Slowly smart homes will become reality, renewable power generation will overtake traditional ways of power production in quantity. Flexibility and demand-response methods will be used and they have to be used intelligently. My research focuses on multi-agent systems, game theory and learning.</p>
-
-
-
-                <h2>News</h2>
-                <li><b>Feb.2016</b> The source code used for my publication "A Multi-Scale Energy Demand Model suggests sharing Market Risks with Intelligent Energy Cooperatives" can be downloaded and used under the MIT license here: <a href="https://github.com/GiorgosMethe/SLP-Demand_Decomposition_Tool" target="_blank">SLP-Demand_Decomposition_Tool</a>.
-                  <p><img src="images/SLP-decomposition.png">The tool can load an arbitrary electricity standard load profile from a csv file, it can then generate synthetic data in any scale, for the discrete, or continuous cases.</p>
-                  </li>
-                <li><b>Sep.2015</b> My paper "A Multi-Scale Energy Demand Model suggests sharing Market Risks with Intelligent Energy Cooperatives" was accepted for publication on the proceedings of ISGT-Asia 2015 an IEEE Power and Energy Society International Conference (IEEE-PES).</li>
-                <li><b>Mar.2015</b> My paper "Novelty Search for Soft-Robotic Space Exploration" was accepted for publication on the proceedings of GECCO 2015.</li>
-                <li><b>Feb.2015</b> I accepted a full-time position at Centrum Wiskunde & Informatica (CWI) in Amsterdam as a PhD. candidate.</li>
-                <li><b>Dec.2014</b> I successfully defended my master thesis with title "Evolution of Soft-Robots by Novelty Search" at the University of Amsterdam.</li>
-                <li><b>Sep.2013</b> My paper "Orientation Finding using a Grid based Visual Compass" was accepted for publication on the proceedings of BNAIC 2013.</li>
+                    <h2><a id="welcome" class="anchor" href="#welcome" aria-hidden="true"></a>Welcome to my personal webpage</h2>
+                    <p>I firmly believe that artificial intelligence can slowly, take over all simple tasks humans are forced to deal with on daily basis. Artificial intelligence as a field of study can help humanity move forward faster, if used appropriately. I currently conduct research on how artificial intelligence can benefit future electricity networks and markets. Slowly smart homes will become reality, renewable power generation will overtake traditional ways of power production in quantity. Flexibility and demand-response methods will be used and they have to be used intelligently. My research focuses on multi-agent systems, game theory and learning.</p>
 
 
 
+                    <h2>News</h2>
+                    <li><b>Feb.2016</b> The source code used for my publication "A Multi-Scale Energy Demand Model suggests sharing Market Risks with Intelligent Energy Cooperatives" can be downloaded and used under the MIT license here: <a href="https://github.com/GiorgosMethe/SLP-Demand_Decomposition_Tool" target="_blank">SLP-Demand_Decomposition_Tool</a>.
+                      <p><img src="images/SLP-decomposition.png">The tool can load an arbitrary electricity standard load profile from a csv file, it can then generate synthetic data in any scale, for the discrete, or continuous cases.</p>
+                      </li>
+                    <li><b>Sep.2015</b> My paper "A Multi-Scale Energy Demand Model suggests sharing Market Risks with Intelligent Energy Cooperatives" was accepted for publication on the proceedings of ISGT-Asia 2015 an IEEE Power and Energy Society International Conference (IEEE-PES).</li>
+                    <li><b>Mar.2015</b> My paper "Novelty Search for Soft-Robotic Space Exploration" was accepted for publication on the proceedings of GECCO 2015.</li>
+                    <li><b>Feb.2015</b> I accepted a full-time position at Centrum Wiskunde & Informatica (CWI) in Amsterdam as a PhD. candidate.</li>
+                    <li><b>Dec.2014</b> I successfully defended my master thesis with title "Evolution of Soft-Robots by Novelty Search" at the University of Amsterdam.</li>
+                    <li><b>Sep.2013</b> My paper "Orientation Finding using a Grid based Visual Compass" was accepted for publication on the proceedings of BNAIC 2013.</li>
 
 
+
+                <div>
 
                 <div id="section-1">
 
@@ -216,135 +180,6 @@
                     <li><p><a href="http://www.michaelkaisers.com/c/" target="_blank">Grid-tied Solar Explorer</a> by Michael Kaisers</p></li>
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div id="section-4">
-
-
-                    <h2><a id="personal" class="anchor" href="#personal" aria-hidden="true"></span></a>Personal</h2>
-                    <p>Enjoy some nice pictures that I've taken from the nicest places.</p>
-                    <hr>
-
-                    <!-- Jssor Slider Begin -->
-                    <!-- To move inline styles to css file/block, please specify a class name for each element. -->
-                    <div id="slider1_container" style="position: relative; width: 100%; height: 300px;">
-                        <!-- Slides Container -->
-                        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width:500px; height:300px; overflow: hidden;">
-                            <!-- Slide -->
-                            <div>
-                                <img u="image" src="images/small-tehran.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"></div>
-                                <div style="position: absolute; top: 0px; left: 0px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Tehran, Iran, April 2013<a href="images/tehran.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-chania.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Chania, Greece, July 2013<a href="images/chania.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-araxoba.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Arachova, Greece, Dec 2014<a href="images/araxoba.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-paris.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Paris, France, February 2015<a href="images/paris.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-nice.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Nice, France, May 2015<a href="images/nice.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-cannes.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"></div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Cannes, France, May 2015<a href="images/cannes.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-monaco.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Monte Carlo, Monaco, May 2015<a href="images/monaco.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-bordeaux.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Bordeaux, France, June 2015<a href="images/bordeaux.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-dunedupilat.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Dune du Pilat, France, June 2015<a href="images/dunedupilat.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-madrid.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Palacio Real, Madrid, Spain, July 2015<a href="images/madrid.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                            <div>
-                                <img u="image" src="images/small-air.jpg" width="100%"/>
-                                <div u="caption" t="MCLIP|B" style="position: absolute; top: 250px; left: 0px; width: 600px; height: 50px;">
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; background-color: Black; opacity: 0.5; filter: alpha(opacity=50);"> </div>
-                                <div style="position: absolute; top: 0px; left: 0px; width: 500px; height: 50px; color: White; font-size: 16px; font-weight: bold; line-height: 50px; text-align: center;">
-                                Sunset, July 2015<a href="images/air.jpg" target="_blank"><img src="images/download.svg", style="position: relative; height:30px; top:5px; left:10px"></a>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
 
                 <div id="section-5">
