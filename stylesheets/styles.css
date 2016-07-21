@@ -1,5 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300italic,300);
 
+.navbar .navbar-nav{
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
 body {
   padding:70px;
   font:16px/1.7 Raleway;
