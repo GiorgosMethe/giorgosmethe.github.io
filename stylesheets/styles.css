@@ -64,7 +64,6 @@ input:focus {
   border:none;
   display:inline-block;
   color:#fff;
-  background-color: #086A87;
   height:30px;
 }
 .sort:hover {
