@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  <script src="javascripts/scale.fix.js"></script>
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link rel="shortcut icon" href="images/favicon.ico">
   <style>
@@ -140,8 +139,48 @@
     </div>
     <div id="section4" class="container-fluid">
       <h1>Publications</h1>
-      <p><script src="http://bibbase.org/show?bib=http%3A%2F%2Fwww.georgiosmethenitis.com%2Fmy.bib&jsonp=1"></script>
-</p>
+      <div id="papers">
+      <input class="search" placeholder="Search..."/>
+      <button class="sort" data-sort="title">
+        Sort by title
+      </button>
+      <button class="sort" data-sort="year">
+        Sort by year
+      </button>
+      <ul class="list">
+        <li>
+          <pauthor class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré, </pauthor>
+          <ptitle class="title">Incentivizing Intelligent Customer Behavior in Smart-Grids: A Risk-Sharing Tariff & Optimal Strategies, </ptitle>
+          <pconf class="conf">International Joint Conference on Artificial Intelligence (IJCAI), </pconf>
+          <pyear class="year">2016</pyear>
+        </li>
+        <li>
+          <pauthor class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré, </pauthor>
+          <ptitle class="title">A multi-scale energy demand model suggests sharing market risks with intelligent energy cooperatives, </ptitle>
+          <pconf class="conf">Smart Grid Technologies - Asia (ISGT ASIA), 2015 IEEE Innovative, </pconf>
+          <pyear class="year">2015</pyear>
+        </li>
+        <li>
+          <pauthor class="author">Georgios Methenitis, Daniel Hennes, Dario Izzo, Arnoud Visser,  </pauthor>
+          <ptitle class="title">Novelty Search for Soft Robotic Space Exploration, </ptitle>
+          <pconf class="conf">Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation, </pconf>
+          <pyear class="year">2015</pyear>
+        </li>
+        <li>
+          <pauthor class="author">Georgios Methenitis, Patrick de Kok, Sander Nugteren, Arnoud Visser,  </pauthor>
+          <ptitle class="title">Orientation finding using a grid based visual compass, </ptitle>
+          <pconf class="conf">Belgium Netherlands Artificial Intelligence Conference, </pconf>
+          <pyear class="year">2013</pyear>
+        </li>
+      </ul>
+      </div>
+    <script src="javascripts/list.js"></script>
+    <script type="text/javascript">
+    var options = {
+      valueNames: [ 'title', 'year' ]
+      };
+      var userList = new List('papers', options);
+    </script>
     </div>
     <div id="section5" class="container-fluid">
       <h1>Links</h1>
