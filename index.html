@@ -1,87 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Georgios Methenitis</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <meta name="description" content="Georgios Methenitis — AI researcher and machine learning engineer focused on multi-agent systems, pricing mechanisms, and market design.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,300,400,500,600,700,800" />
   <link rel="stylesheet" href="stylesheets/styles.css">
   <link rel="shortcut icon" href="images/favicon.ico">
-  <style>
-  #section2 {padding-top:50px;}
-  #section3 {padding-top:50px;}
-  #section4 {padding-top:50px;}
-  #section5 {padding-top:50px;}
-  #section6 {padding-top:50px;}
-  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-04PLX8YP45"></script>
   <script>
-  $(document).ready(function(){
-    // Add scrollspy to <body>
-    $('body').scrollspy({target: ".navbar", offset: 50});
-    // Add smooth scrolling on all links inside the navbar
-    $("#myNavbar a").on('click', function(event) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-        // Store hash
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 700, function(){
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-        });
-      }
-    });
-  });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-04PLX8YP45');
   </script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+<body id="top">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="container-fluid">
       <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+        <a class="navbar-brand" href="#top">Georgios Methenitis</a>
+        <button type="button" class="navbar-toggle" aria-label="Toggle navigation" aria-controls="myNavbar" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Georgios Methenitis</a>
       </div>
-      <div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="#section2">News</a></li>
-            <li><a href="#section3">Curicullum Vitae</a></li>
-            <li><a href="#section4">Publications</a></li>
-            <li><a href="#section6">Contact</a></li>
-          </ul>
-        </div>
+      <div class="navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#section2">News</a></li>
+          <li><a href="#section3">Curriculum Vitae</a></li>
+          <li><a href="#section4">Publications</a></li>
+          <li><a href="#section6">Contact</a></li>
+        </ul>
       </div>
     </div>
   </nav>
 <div class="wrapper">
     <header>
   <div id="container">
-  <img src="images/IMG_2925.jpg">
+  <img src="images/IMG_2925.jpg" alt="Portrait of Georgios Methenitis wearing a cap">
   </div>
-        <p></p>
         <h1>Georgios Methenitis</h1>
         <h3>
             <p>PhD. Artificial Intelligence</p>
             <p>Senior Machine Learning Engineer @ Sennder</p>
             <p>Barcelona, Spain</p>
         </h3>
-        <!-- Place this tag where you want the button to render. -->
-        <a class="github-button" href="https://github.com/GiorgosMethe" data-style="mega" aria-label="Follow @GiorgosMethe on GitHub">Follow @GiorgosMethe</a>
-
-        <p><a href="https://nl.linkedin.com/pub/georgios-methenitis/5a/b89/2a1">
-        <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_viewmy_160x33.png" width="150" height="33" border="0" alt="View Georgios Methenitis's profile on LinkedIn">
-        </a></p>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+        <div class="social-links">
+          <a class="social-button github-button" href="https://github.com/GiorgosMethe">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/github/github-original.svg" alt="" aria-hidden="true">
+            <span>GitHub</span>
+          </a>
+          <a class="social-button linkedin-button" href="https://nl.linkedin.com/pub/georgios-methenitis/5a/b89/2a1">
+            <img class="social-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/linkedin/linkedin-plain.svg" alt="" aria-hidden="true">
+            <span>LinkedIn</span>
+          </a>
+        </div>
     </header>
   <section>
     <div id="section1" class="container-fluid">
@@ -97,10 +75,12 @@
     </div>
     <div id="section2" class="container-fluid">
       <h1>News</h1>
+      <ul class="news-list">
       <li><b>Feb. 2023</b> I took on a new role as a Senior Data Scientist at <a href="https://www.sennder.com/es" target="_blank">Sennder</a> in Barcelona.</li>
       <li><b>Oct. 2021</b> I started working at <a href="https://thebeat.co" target="_blank">BEAT</a>, a company that is part of the FREE NOW group. Company shuts download operations in Latin America market in Nov. 2022 (<a href="https://www.bloomberglinea.com/english/beat-exits-argentina-mexico-and-peru-to-focus-on-european-markets/">link</a>)</li>
       <li><b>Jul. 2020</b> On Wednesday 15th of July, I defended my PhD thesis with title: Agent Interactions & Mechanisms in Markets with Uncertainties. Video here:
-      <iframe width="500" height="280" src="https://www.youtube.com/embed/vY0UlPO-eYs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="video-embed"><iframe src="https://www.youtube.com/embed/vY0UlPO-eYs" title="PhD thesis defense: Agent Interactions and Mechanisms in Markets with Uncertainties" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      </li>
       <li><b>Oct. 2019</b> My paper "Degrees of Rationality in Agent-Based Retail Markets" was accepted for publication in the Springer journal <a href="http://link.springer.com/article/10.1007/s10614-019-09955-2" target="_blank">Computational Economics</a>.</li>
       <li><b>Oct. 2019</b> I started working at <a href="https://www.mlprograms.com/" target="_blank">Machine Learning Programs</a>.</li>
       <li><b>Jan. 2019</b> My paper "Forecast-Based Mechanisms for Demand Response" was accepted for publication in the proceedings of AAMAS 2019.</li>
@@ -108,19 +88,18 @@
       <li><b>Jan. 2017</b> My paper "SLA-Mechanisms for Electricity Trading under Volatile Supply and Varying Criticality of Demand" has been accepted for publication as an extended abstract in the Proceedings of the 16th International Conference on Autonomous Agents and Multiagent Systems (AAMAS2017).</li>
       <li><b>Oct. 2016</b> An extended abstract of my last paper "Incentivizing Intelligent Customer Behavior in Smart-Grids: A Risk-Sharing Tariff & Optimal Strategies" was accepted for publication in the proceedings of BNAIC 2016 in Amsterdam.</li>
       <li><b>Jun. 2016</b> Check out this video of evolved soft robots to walk on different gravity levels:
-      <iframe width="500" height="280" src="https://www.youtube.com/embed/Gjoh3lexiRQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Based on the results of my master thesis, presented at GECCO '15: <a href="https://dl.acm.org/doi/10.1145/2739480.2754731" target="_blank">Publication</a> , <a href="https://github.com/GiorgosMethe/Soft-Robots-Novelty-Search" target="_blank">GitHub project</a></p></li>
+        <div class="video-embed"><iframe src="https://www.youtube.com/embed/Gjoh3lexiRQ" title="Evolved soft robots walking under different gravity levels" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p>Based on the results of my master thesis, presented at GECCO '15: <a href="https://dl.acm.org/doi/10.1145/2739480.2754731" target="_blank" rel="noopener noreferrer">Publication</a>, <a href="https://github.com/GiorgosMethe/Soft-Robots-Novelty-Search" target="_blank" rel="noopener noreferrer">GitHub project</a></p></li>
       <li><b>Apr. 2016</b> My paper "Incentivizing Intelligent Customer Behavior in Smart-Grids: A Risk-Sharing Tariff & Optimal Strategies" was accepted for publication in the proceedings of IJCAI 2016.</li>
-      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">My paper &quot;Incentivizing Intelligent Customer Behavior in Smart-Grids:...&quot; has been accepted for publication at <a href="https://twitter.com/ijcai16">@ijcai16</a> <a href="https://twitter.com/hashtag/ijcai16?src=hash">#ijcai16</a> NY :)</p>&mdash; Georgios Methenitis (@g_methe) <a href="https://twitter.com/g_methe/status/717261233725030401">April 5, 2016</a></blockquote>
-      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-      <li><b>Feb. 2016</b> You can download the source code of my publication with title: A Multi-Scale Energy Demand Model suggests sharing Market Risks with Intelligent Energy Cooperatives" (MIT license) here:<p><a href="https://github.com/GiorgosMethe/SLP-Demand_Decomposition_Tool" target="_blank">SLP-Demand_Decomposition_Tool</p></a>
-        <p><img src="images/SLP-decomposition.png">The tool can load an arbitrary electricity standard load profile from a csv file, it can then generate synthetic data in any scale, for the discrete, or continuous cases.</p>
+      <li><b>Feb. 2016</b> You can download the source code for my publication, “A Multi-Scale Energy Demand Model Suggests Sharing Market Risks with Intelligent Energy Cooperatives” (MIT license), here: <a href="https://github.com/GiorgosMethe/SLP-Demand_Decomposition_Tool" target="_blank" rel="noopener noreferrer">SLP-Demand_Decomposition_Tool</a>
+        <p><img src="images/SLP-decomposition.png" alt="Example output from the SLP demand decomposition tool">The tool loads an electricity standard load profile from a CSV file and generates synthetic data at different scales.</p>
         </li>
       <li><b>Sep. 2015</b> My paper "A Multi-Scale Energy Demand Model suggests sharing Market Risks with Intelligent Energy Cooperatives" was accepted for publication in the proceedings of ISGT-Asia 2015 an IEEE Power and Energy Society International Conference (IEEE-PES).</li>
       <li><b>Mar. 2015</b> My paper "Novelty Search for Soft-Robotic Space Exploration" was accepted for publication in the proceedings of GECCO 2015.</li>
       <li><b>Feb. 2015</b> I accepted a full-time position at Centrum Wiskunde & Informatica (CWI) in Amsterdam as a PhD. candidate.</li>
       <li><b>Dec. 2014</b> I successfully defended my master thesis with title "Evolution of Soft-Robots by Novelty Search" at the University of Amsterdam.</li>
       <li><b>Sep. 2013</b> My paper "Orientation Finding using a Grid based Visual Compass" was accepted for publication on the proceedings of BNAIC 2013.</li>
+      </ul>
     </div>
     <div id="section3" class="container-fluid">
       <h1>Curriculum Vitae</h1>
@@ -129,7 +108,7 @@
         Master's degree in Artificial Intelligence from the University of
         Amsterdam in 2014.</p>
 
-      <p><img src="images/robocup.jpg" >Dutch Nao Team places third in Robocup Iran Open 2013</p>
+      <p><img src="images/robocup.jpg" alt="Dutch Nao Team at the RoboCup Iran Open 2013">Dutch Nao Team places third in Robocup Iran Open 2013</p>
       <hr>
 
       <p>As a MS.c. student I was a Teaching
@@ -154,18 +133,15 @@
       <p>Since Feb. 2023, I am working as a Senior Machine Learning Engineer at <a href="https://www.sennder.com/es" target="_blank">Sennder</a>,
         focusing on prototyping and productionization of pricing models in the logistics domain.</p>
 
-      <p></p>
-      <p></p>
       <p>You can download my CV here:</p>
-      <p></p>
       <p><a href="files/Georgios_Methenitis_CV.pdf" target="_blank">
-      <img src="images/pdf.png", style="height:40px"/></a></p>
+      <img src="images/pdf.png" alt="Download CV (PDF)" style="height:40px"/></a></p>
       <p>Updated: Jan. 2026</p>
     </div>
     <div id="section4" class="container-fluid">
       <h1>Publications</h1>
       <div id="papers">
-      <input class="search" placeholder="Search..."/>
+      <input class="search" type="search" aria-label="Search publications" placeholder="Search publications..."/>
       <button class="sort" data-sort="title">
         Sort by title
       </button>
@@ -174,74 +150,74 @@
       </button>
       <ul class="list">
         <li>
-          <pauthor class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré, </pauthor>
-          <ptitle class="title">Degrees of Rationality in Agent-Based Retail Markets, </ptitle>
-          <pconf class="conf">Springer Computational Economics, </pconf>
-          <pyear class="year">2019</pyear>
-          <p><a href="files/methenitis2019degrees.pdf" target="_blank">pdf</a> | <a href="files/methenitis2019degrees.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré.</span>
+          <cite class="title">Degrees of Rationality in Agent-Based Retail Markets.</cite>
+          <span class="conf">Springer Computational Economics</span>,
+          <span class="year">2019</span>
+          <p class="publication-links"><a href="files/methenitis2019degrees.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2019degrees.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré, </pauthor>
-          <ptitle class="title">Forecast-Based Mechanisms for Demand Response, </ptitle>
-          <pconf class="conf">International Conference on Autonomous Agents and Multiagent Systems (AAMAS), </pconf>
-          <pyear class="year">2019</pyear>
-          <p><a href="files/methenitis2019forecast.pdf" target="_blank">pdf</a> | <a href="files/methenitis2019forecast.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré.</span>
+          <cite class="title">Forecast-Based Mechanisms for Demand Response.</cite>
+          <span class="conf">International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</span>,
+          <span class="year">2019</span>
+          <p class="publication-links"><a href="files/methenitis2019forecast.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2019forecast.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré, </pauthor>
-          <ptitle class="title">Renewable electricity trading through SLAs, </ptitle>
-          <pconf class="conf">Springer Energy Informatics, </pconf>
-          <pyear class="year">2018</pyear>
-          <p><a href="https://link.springer.com/content/pdf/10.1186%2Fs42162-018-0062-y.pdf" target="_blank">pdf</a> | <a href="files/methenitis2018slas.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré.</span>
+          <cite class="title">Renewable electricity trading through SLAs.</cite>
+          <span class="conf">Springer Energy Informatics</span>,
+          <span class="year">2018</span>
+          <p class="publication-links"><a href="https://link.springer.com/content/pdf/10.1186%2Fs42162-018-0062-y.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2018slas.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré, </pauthor>
-          <ptitle class="title">SLA-Mechanisms for Electricity Trading under Volatile Supply and Varying Criticality of Demand, </ptitle>
-          <pconf class="conf">International Conference on Autonomous Agents and Multiagent Systems (AAMAS), </pconf>
-          <pyear class="year">2017</pyear>
-          <p><a href="files/methenitis2017slas.pdf" target="_blank">pdf</a> | <a href="files/methenitis2017slas.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré.</span>
+          <cite class="title">SLA-Mechanisms for Electricity Trading under Volatile Supply and Varying Criticality of Demand.</cite>
+          <span class="conf">International Conference on Autonomous Agents and Multiagent Systems (AAMAS)</span>,
+          <span class="year">2017</span>
+          <p class="publication-links"><a href="files/methenitis2017slas.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2017slas.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré, </pauthor>
-          <ptitle class="title">Incentivizing Intelligent Customer Behavior in Smart-Grids: A Risk-Sharing Tariff & Optimal Strategies, </ptitle>
-          <pconf class="conf">International Joint Conference on Artificial Intelligence (IJCAI), </pconf>
-          <pyear class="year">2016</pyear>
-          <p><a href="files/methenitis2016incentivizing.pdf" target="_blank">pdf</a> | <a href="files/methenitis2016incentivizing.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré.</span>
+          <cite class="title">Incentivizing Intelligent Customer Behavior in Smart-Grids: A Risk-Sharing Tariff &amp; Optimal Strategies.</cite>
+          <span class="conf">International Joint Conference on Artificial Intelligence (IJCAI)</span>,
+          <span class="year">2016</span>
+          <p class="publication-links"><a href="files/methenitis2016incentivizing.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2016incentivizing.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré, </pauthor>
-          <ptitle class="title">A multi-scale energy demand model suggests sharing market risks with intelligent energy cooperatives, </ptitle>
-          <pconf class="conf">Smart Grid Technologies - Asia (ISGT ASIA), 2015 IEEE Innovative, </pconf>
-          <pyear class="year">2015</pyear>
-          <p><a href="files/methenitis2015multiscale.pdf" target="_blank">pdf</a> | <a href="files/methenitis2016multiscale.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis, Michael Kaisers, Han La Poutré.</span>
+          <cite class="title">A multi-scale energy demand model suggests sharing market risks with intelligent energy cooperatives.</cite>
+          <span class="conf">Smart Grid Technologies - Asia (ISGT ASIA), IEEE Innovative Smart Grid Technologies - Asia</span>,
+          <span class="year">2015</span>
+          <p class="publication-links"><a href="files/methenitis2015multiscale.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2016multiscale.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis, Daniel Hennes, Dario Izzo, Arnoud Visser,  </pauthor>
-          <ptitle class="title">Novelty Search for Soft Robotic Space Exploration, </ptitle>
-          <pconf class="conf">Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation, </pconf>
-          <pyear class="year">2015</pyear>
-          <p><a href="files/methenitis2015space.pdf" target="_blank">pdf</a> | <a href="files/methenitis2015space.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis, Daniel Hennes, Dario Izzo, Arnoud Visser.</span>
+          <cite class="title">Novelty Search for Soft Robotic Space Exploration.</cite>
+          <span class="conf">Proceedings of the 2015 Annual Conference on Genetic and Evolutionary Computation</span>,
+          <span class="year">2015</span>
+          <p class="publication-links"><a href="files/methenitis2015space.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2015space.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis</pauthor>
-          <ptitle class="title">Evolution of Soft Robots by Novelty Search, </ptitle>
-          <pconf class="conf">Master Thesis, University of Amsterdam, The Netherlands</pconf>
-          <pyear class="year">2014</pyear>
-          <p><a href="files/methenitis2014novelty.pdf" target="_blank">pdf</a> | <a href="files/methenitis2014novelty.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis.</span>
+          <cite class="title">Evolution of Soft Robots by Novelty Search.</cite>
+          <span class="conf">Master's thesis, University of Amsterdam, The Netherlands</span>,
+          <span class="year">2014</span>
+          <p class="publication-links"><a href="files/methenitis2014novelty.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2014novelty.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis, Patrick de Kok, Sander Nugteren, Arnoud Visser,  </pauthor>
-          <ptitle class="title">Orientation finding using a grid based visual compass, </ptitle>
-          <pconf class="conf">Belgium Netherlands Artificial Intelligence Conference, </pconf>
-          <pyear class="year">2013</pyear>
-          <p><a href="files/methenitis2013orientation.pdf" target="_blank">pdf</a> | <a href="files/methenitis2013orientation.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis, Patrick de Kok, Sander Nugteren, Arnoud Visser.</span>
+          <cite class="title">Orientation finding using a grid based visual compass.</cite>
+          <span class="conf">Belgium Netherlands Artificial Intelligence Conference</span>,
+          <span class="year">2013</span>
+          <p class="publication-links"><a href="files/methenitis2013orientation.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2013orientation.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
         <li>
-          <pauthor class="author">Georgios Methenitis,  </pauthor>
-          <ptitle class="title">Player Behavior and Team Strategy for the RoboCup 3D Simulation League, </ptitle>
-          <pconf class="conf">Diploma Thesis, Technical University of Crete, Greece</pconf>
-          <pyear class="year">2012</pyear>
-          <p><a href="files/methenitis2012strategy.pdf" target="_blank">pdf</a> | <a href="files/methenitis2012strategy.bib" target="_blank">bibtex</a></p>
+          <span class="author">Georgios Methenitis.</span>
+          <cite class="title">Player Behavior and Team Strategy for the RoboCup 3D Simulation League.</cite>
+          <span class="conf">Diploma thesis, Technical University of Crete, Greece</span>,
+          <span class="year">2012</span>
+          <p class="publication-links"><a href="files/methenitis2012strategy.pdf" target="_blank" rel="noopener noreferrer">PDF</a> | <a href="files/methenitis2012strategy.bib" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
         </li>
       </ul>
       </div>
@@ -263,14 +239,60 @@
   </footer>
 </div>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  const toggleButton = document.querySelector('.navbar-toggle');
+  const navCollapse = document.getElementById('myNavbar');
+  const navLinks = document.querySelectorAll('#myNavbar a');
 
-  ga('create', 'UA-63202908-1', 'auto');
-  ga('send', 'pageview');
+  if (toggleButton && navCollapse) {
+    toggleButton.addEventListener('click', function () {
+      const isOpen = navCollapse.classList.toggle('open');
+      toggleButton.setAttribute('aria-expanded', String(isOpen));
+    });
+  }
 
+  navLinks.forEach(function (link) {
+    link.addEventListener('click', function (event) {
+      const href = link.getAttribute('href');
+      if (!href || !href.startsWith('#')) return;
+
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      event.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      history.replaceState(null, '', href);
+
+      if (navCollapse && navCollapse.classList.contains('open')) {
+        navCollapse.classList.remove('open');
+      }
+      if (toggleButton) {
+        toggleButton.setAttribute('aria-expanded', 'false');
+      }
+    });
+  });
+
+  const sections = document.querySelectorAll('section > div[id]');
+  const navItems = document.querySelectorAll('.navbar-nav a');
+  const activateNav = () => {
+    const scrollPosition = window.scrollY + 120;
+    let currentId = 'section2';
+
+    sections.forEach(function (section) {
+      const top = section.offsetTop;
+      if (scrollPosition >= top) {
+        currentId = section.getAttribute('id');
+      }
+    });
+
+    navItems.forEach(function (item) {
+      const linkHref = item.getAttribute('href');
+      const isActive = linkHref === '#' + currentId;
+      item.classList.toggle('active', isActive);
+    });
+  };
+
+  window.addEventListener('scroll', activateNav, { passive: true });
+  activateNav();
 </script>
 </body>
 </html>
