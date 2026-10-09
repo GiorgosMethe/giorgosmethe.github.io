@@ -1,5 +1,5 @@
 :root {
-  --bg: #f7f6f2;
+  --bg: #fbfaf7;
   --panel: rgba(255, 255, 255, 0.55);
   --panel-strong: #fffefa;
   --text: #1f2937;
@@ -350,10 +350,23 @@ a:focus {
 }
 
 .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0 12px;
+  border-radius: 999px;
   color: var(--nav-text);
   font-size: 1.08rem;
   font-weight: 400;
   letter-spacing: -0.02em;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus-visible {
+  background: rgba(255, 255, 255, 0.10);
+  color: #fff;
   text-decoration: none;
 }
 
